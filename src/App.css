@@ -1,0 +1,123 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	font-family: "Bellefair", serif;
+	font-size: 9.875rem;
+}
+
+h2 {
+	font-family: "Bellefair", serif;
+	font-size: 6.25rem;
+}
+
+h3 {
+	font-family: "Bellefair", serif;
+	font-size: 3.5rem;
+}
+
+h4 {
+	font-family: "Bellefair", serif;
+	font-size: 2rem;
+}
+
+h5 {
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 4.75px;
+	color: #d0d6f9;
+}
+
+.subheading-1 {
+	font-family: "Bellefair", serif;
+	font-size: 28px;
+}
+
+.subheading-2 {
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 14px;
+	letter-spacing: 2.35px;
+	color: #d0d6f9;
+}
+
+.nav-text {
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 16px;
+}
+
+p {
+	color: #d0d6f9;
+}
+
+.home-container {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../assets/home/background-home-desktop.jpg");
+}
+
+.destination-container {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../assets/destination/background-destination-desktop.jpg");
+}
+
+.crew-container {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../assets/crew/background-crew-desktop.jpg");
+}
+
+.technology-container {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../assets/technology/background-technology-desktop.jpg");
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, 80%);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+	.navbar {
+		backdrop-filter: blur(1rem);
+		background-color: rgba(250, 250, 250, 10%);
+	}
+}
+
+@media (max-width: 947px) {
+	.home-container {
+		background-image: url("../assets/home/background-home-tablet.jpg");
+	}
+	.destination-container {
+		background-image: url("../assets/destination/background-destination-tablet.jpg");
+	}
+	.crew-container {
+		background-image: url("../assets/crew/background-crew-tablet.jpg");
+	}
+	.technology-container {
+		background-image: url("../assets/technology/background-technology-tablet.jpg");
+	}
+}
+
+@media (max-width: 375px) {
+	.home-container {
+		background-image: url("../assets/home/background-home-mobile.jpg");
+	}
+	.destination-container {
+		background-image: url("../assets/destination/background-destination-mobile.jpg");
+	}
+	.crew-container {
+		background-image: url("../assets//crew/background-crew-mobile.jpg");
+	}
+	.technology-container {
+		background-image: url("../assets/technology/background-technology-mobile.jpg");
+	}
+}

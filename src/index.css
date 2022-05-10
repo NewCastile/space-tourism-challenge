@@ -1,0 +1,41 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Bellefair&family=Outfit:wght@200&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: "Outfit", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+	font-size: 16px;
+}
+
+@media (max-width: 815px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+#root {
+	height: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+ul {
+	list-style: none;
+}
